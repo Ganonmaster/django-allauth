@@ -380,7 +380,7 @@ class SignupForm(BaseSignupForm):
         adapter.save_user(request, user, self)
         self.custom_signup(request, user)
         # TODO: Move into adapter `save_user` ?
-        setup_user_email(request, user, [])
+        #setup_user_email(request, user, [])
         return user
 
 
